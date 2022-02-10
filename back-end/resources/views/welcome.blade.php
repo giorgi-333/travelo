@@ -8,11 +8,7 @@
 </head>
 <body>
 <div class="home">
-    @foreach ($er as $item)
-        <h1>
-            {{ $item->id }} - {{ $item->text }}
-        </h1>
-    @endforeach
+   <h1> Title </h1>
 </div>
 </body>
 </html>

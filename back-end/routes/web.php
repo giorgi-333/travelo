@@ -15,13 +15,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $er = DB::table('er')->get();
-
-    return view('welcome',['er' => $er]);
+    return view('welcome');
 });
-
-Route::get('api/er', function () {
-    $er = DB::table('er')->get();
-
-    return response()->json($er);
-});
+//
+//Route::get('api/er', function () {
+//    $er = DB::table('er')->get();
+//
+//    return response()->json($er);
+//});
